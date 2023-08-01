@@ -65,7 +65,7 @@ fun SelectScreen(nc : NavController){
         selectModel[0].updateListStates(true)
 
         Row(modifier = Modifier
-            .weight(0.85f)
+            .weight(0.75f)
             .fillMaxWidth()
             .padding(10.dp)) {
             Box(modifier = Modifier.weight(0.33f)){
@@ -124,7 +124,8 @@ fun SelectScreen(nc : NavController){
             1234,
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(bottom = 15.dp),
+                .padding(bottom = 15.dp)
+                .weight(0.1f),
             BtnBlue
         )
     }
