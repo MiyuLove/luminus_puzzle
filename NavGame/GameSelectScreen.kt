@@ -65,11 +65,13 @@ fun SelectScreen(nc : NavController){
         selectModel[0].updateListStates(true)
 
         Row(modifier = Modifier
-            .weight(0.75f)
+            .weight(0.85f)
             .fillMaxWidth()
             .padding(10.dp)) {
             Box(modifier = Modifier.weight(0.33f)){
-                SquareBtnList(num = 0,modifier = Modifier, model = selectModel[0],
+                SquareBtnList(
+                    num = 0,modifier = Modifier,
+                    model = selectModel[0],
                     oc = {
                         selectModel[1].updateListStates(true)
                         selectModel[2].updateListStates(false)
@@ -80,15 +82,20 @@ fun SelectScreen(nc : NavController){
                 )
             }
             Box(modifier = Modifier.weight(0.33f)){
-                SquareBtnList(num = 1,modifier = Modifier, model = selectModel[1],
+                SquareBtnList(
+                    num = 1,modifier = Modifier,
+                    model = selectModel[1],
                     oc = {
                         selectModel[2].updateListStates(true)
                     }
                 )
             }
             Box(modifier = Modifier.weight(0.33f)){
-                SquareBtnList(num = 2,modifier = Modifier, model = selectModel[2],
-                    oc = {})
+                SquareBtnList(
+                    num = 2,modifier = Modifier,
+                    model = selectModel[2],
+                    oc = {}
+                )
             }
         }
         SquareListClickedBtn(
