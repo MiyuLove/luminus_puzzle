@@ -15,7 +15,8 @@ import com.exercise.luminus_project.ui.theme.TxtYello
 import org.w3c.dom.Text
 
 @Composable
-fun mainTitle(text : String = "Luminus Puzzle",modifier: Modifier = Modifier, fontSize : Int = 40,textAlign: TextAlign = TextAlign.Center){
+fun mainTitle(text : String = "Luminus Puzzle",modifier: Modifier = Modifier,
+              fontSize : Int = 40,textAlign: TextAlign = TextAlign.Center){
     Text(
         text = text,
         modifier = modifier,
@@ -28,7 +29,8 @@ fun mainTitle(text : String = "Luminus Puzzle",modifier: Modifier = Modifier, fo
 }
 
 @Composable
-fun infoText(text : String = "info text",modifier: Modifier = Modifier, fontSize : Int = 30, overflow: TextOverflow = TextOverflow.Clip){
+fun infoText(text : String = "info text",modifier: Modifier = Modifier,
+             fontSize : Int = 30, overflow: TextOverflow = TextOverflow.Clip){
     Text(
         text = text,
         modifier = modifier,
@@ -40,7 +42,8 @@ fun infoText(text : String = "info text",modifier: Modifier = Modifier, fontSize
 }
 
 @Composable
-fun creditText(text : String = "resource",modifier: Modifier = Modifier, fontSize : Int = 10){
+fun creditText(text : String = "resource",modifier: Modifier = Modifier,
+               fontSize : Int = 10){
     Text(
         text = text,
         modifier = modifier,
