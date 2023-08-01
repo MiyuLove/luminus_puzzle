@@ -13,12 +13,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun CenterButtonRow(text : String = "", oc : () -> Unit = {},modifier: Modifier = Modifier,spacerWeight : Float = 0.2f){
+fun CenterButtonRow(text : String = "", oc : () -> Unit = {},
+                    modifier: Modifier = Modifier,spacerWeight : Float = 0.2f){
     Row(Modifier.fillMaxWidth().then(modifier),
         horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically) {
         Spacer(modifier = Modifier.weight(spacerWeight))
-        signForBtn(text = text, oc =  oc, modifier = Modifier.padding(20.dp).weight(1-spacerWeight*2), fontSize = 30)
+        signForBtn(text = text, oc =  oc, 
+                   modifier = Modifier.padding(20.dp).weight(1-spacerWeight*2), fontSize = 30)
         Spacer(modifier = Modifier.weight(spacerWeight))
     }
 }
